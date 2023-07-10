@@ -1,0 +1,6 @@
+if SHIELD_SHINOMIYA
+
+config ZMK_KEYBOARD_NAME
+    default "SHINOMIYA 65"
+
+endif
