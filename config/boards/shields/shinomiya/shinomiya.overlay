@@ -23,7 +23,6 @@
             , <&gpio1 4 GPIO_ACTIVE_HIGH>
             , <&gpio1 6 GPIO_ACTIVE_HIGH>
             , <&gpio0 9 GPIO_ACTIVE_HIGH>
-            , <&gpio GPIO_ACTIVE_HIGH>
             ;
 
         row-gpios
