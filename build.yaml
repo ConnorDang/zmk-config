@@ -15,4 +15,4 @@
 include:
   # - board: nice_nano_v2 # shinomiya65 # Use nice_nano_v2 with combination with shield.
   #   shield: shinomiya 
-  - board: cyber60_rev_d
+  - board: shinomiya65v2

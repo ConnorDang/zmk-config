@@ -1,0 +1,10 @@
+file_format: "1"
+id: SHINOMIYA65V2
+name: shinomiya65v2
+type: board
+arch: arm
+outputs:
+  - usb
+  - ble
+url: https://nicekeyboards.com/nice-nano
+exposes: [pro_micro]
