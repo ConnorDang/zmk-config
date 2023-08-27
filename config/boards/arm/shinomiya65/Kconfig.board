@@ -1,0 +1,8 @@
+# Shinomiya65 board configuration
+
+# Copyright (c) 2023 Connor Dang (Aedes)
+# SPDX-License-Identifier: MIT
+
+config BOARD_SHINOMIYA65
+	bool "shinomiya65"
+	depends on SOC_NRF52840_QIAA
