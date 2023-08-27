@@ -38,21 +38,21 @@
     // 	sensors = <&encoder>;
 	// };
 
-	encoder: encoder_1 {
-        compatible = "alps,ec11";
-        label = "ENCODER";
-        a-gpios = <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; // P1.01
-        b-gpios = <&gpio1 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; // P1.03
-        //resolution = <2>;
-    };
+	// encoder: encoder_1 {
+    //     compatible = "alps,ec11";
+    //     label = "ENCODER";
+    //     a-gpios = <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; // P1.01
+    //     b-gpios = <&gpio1 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; // P1.03
+    //     //resolution = <2>;
+    // };
 
 	// PWM buzzer config
-    buzzer: pwm_buzzer {
-        compatible = "pwm-buzzer";
-		pwms = <&pwm0 0 1000 PWM_POLARITY_NORMAL>;
-		label = "PWM BUZZER";
-		status = "okay";
-    };
+    // buzzer: pwm_buzzer {
+    //     compatible = "pwm-buzzer";
+	// 	pwms = <&pwm0 0 1000 PWM_POLARITY_NORMAL>;
+	// 	label = "PWM BUZZER";
+	// 	status = "okay";
+    // };
 
 	leds {
 			compatible = "gpio-leds";
@@ -74,18 +74,18 @@
 		};
 
 	// These aliases are provided for compatibility with samples
-	aliases {
-		ledgreen = &led_0;
-		ledred   = &led_1;
-		ledblue  = &led_2;
-		buzzer = &buzzer;
-	};
+	// aliases {
+	// 	ledgreen = &led_0;
+	// 	ledred   = &led_1;
+	// 	ledblue  = &led_2;
+	// 	buzzer = &buzzer;
+	// };
 
-	ext-power {
-		compatible = "zmk,ext-power-generic";
-		label = "EXT_POWER";
-		control-gpios = <&gpio0 31 GPIO_ACTIVE_HIGH>; // P0.31
-	};
+	// ext-power {
+	// 	compatible = "zmk,ext-power-generic";
+	// 	label = "EXT_POWER";
+	// 	control-gpios = <&gpio0 31 GPIO_ACTIVE_HIGH>; // P0.31
+	// };
 
 	// default_transform: keymap_transform_0 {
 	// 	compatible = "zmk,matrix-transform";
@@ -130,17 +130,17 @@
 	};
 };
 
-&gpio0 {
-	status = "okay";
-};
+// &gpio0 {
+// 	status = "okay";
+// };
 
-&gpio1 {
-	status = "okay";
-};
+// &gpio1 {
+// 	status = "okay";
+// };
 
-&adc {
-	status = "okay";
-};
+// &adc {
+// 	status = "okay";
+// };
 
 
 &usbd {
