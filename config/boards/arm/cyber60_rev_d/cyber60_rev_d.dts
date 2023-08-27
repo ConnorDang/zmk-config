@@ -20,18 +20,18 @@
 		zmk,kscan = &kscan0;
         // zmk,matrix_transform = &default_transform;
         zmk,underglow = &led_strip;
-		// zmk,battery = &vbatt;
+		zmk,battery = &vbatt;
 		zephyr,console = &cdc_acm_uart;
 	};
 
-	// vbatt: vbatt {
-	// 	compatible = "zmk,battery-voltage-divider";
-	// 	label = "VBATT";
-	// 	io-channels = <&adc 1>; // P0.03
-	// 	output-ohms = <2000000>;
-	// 	full-ohms = <(1000000 + 2000000)>;
-	// 	power-gpios = <&gpio0 2 GPIO_ACTIVE_HIGH>; // P0.02
-	// };
+	vbatt: vbatt {
+		compatible = "zmk,battery-voltage-divider";
+		label = "VBATT";
+		io-channels = <&adc 1>; // P0.03
+		output-ohms = <2000000>;
+		full-ohms = <(1000000 + 2000000)>;
+		power-gpios = <&gpio0 2 GPIO_ACTIVE_HIGH>; // P0.02
+	};
 
 	sensors {
     	compatible = "zmk,keymap-sensors";
@@ -44,6 +44,14 @@
         a-gpios = <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; // P1.01
         b-gpios = <&gpio1 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; // P1.03
         //resolution = <2>;
+    };
+
+	// PWM buzzer config
+    buzzer: pwm_buzzer {
+        compatible = "pwm-buzzer";
+		pwms = <&pwm0 0 1000 PWM_POLARITY_NORMAL>;
+		label = "PWM BUZZER";
+		status = "okay";
     };
 
 	leds {
