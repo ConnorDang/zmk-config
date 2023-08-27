@@ -75,7 +75,7 @@
 	// 	control-gpios = <&gpio0 31 GPIO_ACTIVE_HIGH>; // P0.31
 	// };
 
-    kscan0: kscan_0 {
+    kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
         diode-direction = "col2row";
