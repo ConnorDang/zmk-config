@@ -1,3 +1,11 @@
+/*
+ * Copyright (c) 2023 Connor Dang (Aedes)
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+
+/dts-v1/;
 / {
     chosen {
         zmk,kscan = &kscan0;
