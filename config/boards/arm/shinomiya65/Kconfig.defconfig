@@ -4,7 +4,7 @@
 if BOARD_SHINOMIYA65
 
 config BOARD
-    default "shinomiya65"
+    default "Shinomiya 65"
 
 if USB_DEVICE_STACK
 
