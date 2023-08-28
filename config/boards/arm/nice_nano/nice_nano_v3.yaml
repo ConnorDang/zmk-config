@@ -1,5 +1,5 @@
-identifier: SHINOMIYA62V2
-name: shinomiya65v2
+identifier: nice_nano_v3
+name: nice!nano v3
 type: mcu
 arch: arm
 toolchain:

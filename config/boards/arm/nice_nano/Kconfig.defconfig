@@ -1,7 +1,7 @@
 # Copyright (c) 2021 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if BOARD_NICE_NANO || BOARD_SHINOMIYA62V2
+if BOARD_NICE_NANO_V3
 
 config BOARD
     default "nice_nano"
@@ -22,4 +22,4 @@ config ZMK_BLE
 config ZMK_USB
     default y
 
-endif # BOARD_NICE_NANO || BOARD_SHINOMIYA62V2
+endif # BOARD_NICE_NANO_V3
