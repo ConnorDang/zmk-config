@@ -5,7 +5,7 @@
  */
 
 #include <nordic/nrf52840_qiaa.dtsi>
-#include "nice_nano-pinctrl.dtsi"
+#include "shinomiya65-pinctrl.dtsi"
 
 / {
     model = "nice!nano";
