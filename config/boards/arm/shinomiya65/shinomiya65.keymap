@@ -43,7 +43,7 @@
     //     };
     // };
     combos {
-        compatible = "zmk, combos";
+        compatible = "zmk,combos";
 
         // F1 + R = &bootloader
         combo_bootloader {
