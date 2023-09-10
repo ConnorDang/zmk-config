@@ -13,5 +13,5 @@
 #
 ---
 include:
-  - board: shinomiya65 # Use nice_nano_v2 with combination with shield.
-    #shield: shinomiya 
+  - board: nice_nano_v2 # Use nice_nano_v2 with combination with shield.
+    shield: shinomiya 
