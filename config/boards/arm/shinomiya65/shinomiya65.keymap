@@ -64,7 +64,7 @@
         };
 
         // B + 1 = &bt BT_SEL 1
-        combo_btsel0 {
+        combo_btsel1 {
             timeout-ms = <50>;
             layers = <1>;
             key-positions = <2 48>;
@@ -72,7 +72,7 @@
         };
 
         // B + 1 = &bt BT_SEL 2
-        combo_btsel0 {
+        combo_btsel2 {
             timeout-ms = <50>;
             layers = <1>;
             key-positions = <3 48>;
@@ -80,7 +80,7 @@
         };
 
         // B + 1 = &bt BT_SEL 3
-        combo_btsel0 {
+        combo_btsel3 {
             timeout-ms = <50>;
             layers = <1>;
             key-positions = <4 48>;
@@ -88,7 +88,7 @@
         };
 
         // B + 1 = &bt BT_SEL 4
-        combo_btsel0 {
+        combo_btsel4 {
             timeout-ms = <50>;
             layers = <1>;
             key-positions = <5 48>;
