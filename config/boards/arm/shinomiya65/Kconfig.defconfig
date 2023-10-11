@@ -22,4 +22,16 @@ config ZMK_BLE
 config ZMK_USB
     default y
 
+config BT
+    default y
+
+config BT_MAX_CONN
+    default 1
+
+config BT_MAX_PAIRED
+    default 1
+
+config ZMK_BLE_CLEAR_BONDS_ON_START
+    default y
+
 endif # BOARD_SHINOMIYA65
