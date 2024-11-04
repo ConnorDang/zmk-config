@@ -48,7 +48,7 @@
     combos {
         compatible = "zmk,combos";
 
-        // F1 + R = &bootloader
+        // FN + R = &bootloader
         combo_bootloader {
             timeout-ms = <100>;
             layers = <1>;
