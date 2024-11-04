@@ -57,7 +57,7 @@
         };
 
         // FN + ESC = &bt BT_CLR
-        combo_bootloader {
+        combo_btclr {
             timeout-ms = <100>;
             layers = <1>;
             key-positions = <0 67>;
