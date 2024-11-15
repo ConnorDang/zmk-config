@@ -3,6 +3,9 @@
 
 if BOARD_SHINOMIYA65
 
+config ZMK_KEYBOARD_NAME
+    default "SHINOMIYA 65"
+
 config BOARD
     default "Shinomiya 65"
 
