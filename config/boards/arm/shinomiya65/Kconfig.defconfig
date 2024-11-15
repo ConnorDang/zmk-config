@@ -3,6 +3,9 @@
 
 if BOARD_SHINOMIYA65
 
+config ZMK_KEYBOARD_NAME
+    default "SHINOMIYA 65"
+
 config BOARD
     default "Shinomiya 65"
 
@@ -15,23 +18,5 @@ endif # USB_DEVICE_STACK
 
 config BT_CTLR
     default BT
-
-config ZMK_BLE
-    default y
-
-config ZMK_USB
-    default y
-
-config BT
-    default y
-
-config BT_MAX_CONN
-    default 1
-
-config BT_MAX_PAIRED
-    default 1
-
-config ZMK_BLE_CLEAR_BONDS_ON_START
-    default y
 
 endif # BOARD_SHINOMIYA65
