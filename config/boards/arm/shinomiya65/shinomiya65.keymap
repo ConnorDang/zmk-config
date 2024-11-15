@@ -56,51 +56,46 @@
             bindings = <&bootloader>;
         };
 
-        // FN + Y = &bt BT_CLR
+        // FN + B + Backspace = &bt BT_CLR
         combo_btclr {
             timeout-ms = <100>;
-            layers = <1>;
-            key-positions = <15 67>;
+            key-positions = <12 48 67>;
             bindings = <&bt BT_CLR>;
         };
 
-        // FN + 1 = &bt BT_SEL 0
+        // FN + B + 1 = &bt BT_SEL 0
         combo_btsel0 {
             timeout-ms = <50>;
             layers = <1>;
-            key-positions = <1 67>;
+            key-positions = <1 48 67>;
             bindings = <&bt BT_SEL 0>;
         };
 
-        // FN + 2 = &bt BT_SEL 1
+        // FN + B + 2 = &bt BT_SEL 1
         combo_btsel1 {
             timeout-ms = <50>;
-            layers = <1>;
-            key-positions = <2 67>;
+            key-positions = <2 48 67>;
             bindings = <&bt BT_SEL 1>;
         };
 
-        // FN + 3 = &bt BT_SEL 2
+        // FN + B + 3 = &bt BT_SEL 2
         combo_btsel2 {
             timeout-ms = <50>;
-            layers = <1>;
-            key-positions = <3 67>;
+            key-positions = <3 48 67>;
             bindings = <&bt BT_SEL 2>;
         };
 
-        // FN + 4 = &bt BT_SEL 3
+        // FN + B + 4 = &bt BT_SEL 3
         combo_btsel3 {
             timeout-ms = <50>;
-            layers = <1>;
-            key-positions = <4 67>;
+            key-positions = <4 48 67>;
             bindings = <&bt BT_SEL 3>;
         };
 
-        // FN + 5 = &bt BT_SEL 4
+        // FN + B + 5 = &bt BT_SEL 4
         combo_btsel4 {
             timeout-ms = <50>;
-            layers = <1>;
-            key-positions = <5 67>;
+            key-positions = <5 48 67>;
             bindings = <&bt BT_SEL 4>;
         };
 
