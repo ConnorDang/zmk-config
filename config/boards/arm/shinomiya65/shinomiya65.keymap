@@ -37,50 +37,6 @@
             key-positions = <18 67>;
             bindings = <&bootloader>;
         };
-
-        // FN + B + Backspace = &bt BT_CLR
-        combo_btclr {
-            timeout-ms = <100>;
-            key-positions = <12 48 67>;
-            bindings = <&bt BT_CLR>;
-        };
-
-        // FN + B + 1 = &bt BT_SEL 0
-        combo_btsel0 {
-            timeout-ms = <50>;
-            layers = <1>;
-            key-positions = <1 48 67>;
-            bindings = <&bt BT_SEL 0>;
-        };
-
-        // FN + B + 2 = &bt BT_SEL 1
-        combo_btsel1 {
-            timeout-ms = <50>;
-            key-positions = <2 48 67>;
-            bindings = <&bt BT_SEL 1>;
-        };
-
-        // FN + B + 3 = &bt BT_SEL 2
-        combo_btsel2 {
-            timeout-ms = <50>;
-            key-positions = <3 48 67>;
-            bindings = <&bt BT_SEL 2>;
-        };
-
-        // FN + B + 4 = &bt BT_SEL 3
-        combo_btsel3 {
-            timeout-ms = <50>;
-            key-positions = <4 48 67>;
-            bindings = <&bt BT_SEL 3>;
-        };
-
-        // FN + B + 5 = &bt BT_SEL 4
-        combo_btsel4 {
-            timeout-ms = <50>;
-            key-positions = <5 48 67>;
-            bindings = <&bt BT_SEL 4>;
-        };
-
     };
 
 
@@ -112,6 +68,7 @@
             >;
         };
 
+        
         func {
 // --------- Default QWERTY Layout --------- NOT ACCURATE
 // Layer 1 FUNC
@@ -128,7 +85,7 @@
 // ---------------------------------------------------------------------------------------------------
              bindings = <
 &kp GRAVE &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12    &kp DEL
-&kp TAB   &kp Q   &kp W   &kp E   &bootloader   &out OUT_TOG   &kp Y   &kp U   &kp I   &kp O   &kp P   &kp LBKT  &kp RBKT   &kp BSLH
+&kp TAB   &kp Q   &kp W   &kp E   &trans   &out OUT_TOG   &kp Y   &kp U   &kp I   &kp O   &kp P   &kp LBKT  &kp RBKT   &kp BSLH
 &kp CLCK   &kp A   &kp S   &kp D   &kp F   &kp G   &kp H   &kp J   &kp K   &kp  L  &kp SEMI  &kp SQT  &kp ENTER  &rgb_ug RGB_BRI
 &kp LSHFT  &trans  &kp Z   &kp X   &bt BT_CLR   &kp V   &kp B   &bt BT_NXT   &bt BT_PRV   &rgb_ug RGB_EFR  &rgb_ug RGB_TOG  &kp FSLH  &kp RSHFT  &rgb_ug RGB_BRD
 &kp LCTRL  &kp LGUI  &kp LALT &trans  &trans  &trans  &kp C_PAUSE  &trans  &trans  &trans  &trans  &kp RCTRL  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI
