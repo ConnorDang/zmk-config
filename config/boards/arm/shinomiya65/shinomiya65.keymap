@@ -33,7 +33,6 @@
         // FN + R = &bootloader
         combo_bootloader {
             timeout-ms = <100>;
-            layers = <1>;
             key-positions = <18 67>;
             bindings = <&bootloader>;
         };
